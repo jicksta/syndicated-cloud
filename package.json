@@ -1,0 +1,20 @@
+{
+  "author": "Jay Phillips",
+  "name": "i2",
+  "version": "0.1.0",
+  "repository": {
+    "url": ""
+  },
+  "scripts": {
+    "start": "node src/bootstrap.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine-node": "1.0.26",
+    "requirejs": "2.0.4"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
