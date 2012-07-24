@@ -21,8 +21,7 @@ define(["express", "./routes", "http", "module", "path"], function(express, rout
     app.use(express.errorHandler());
   });
 
-  app.get('/', routes.index)
-
+  app.get('/', routes.index);
 
   return {
     listen: function() {
