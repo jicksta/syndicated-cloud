@@ -1,7 +1,8 @@
-define("system", ["gui"], function(gui) {
+define("system", ["./gui/gui"], function(gui) {
   var self = {};
+
   self.start = function() {
-    gui.start(1337);
+    gui.listen();
   };
 
   return self;
