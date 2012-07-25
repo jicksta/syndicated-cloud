@@ -1,6 +1,11 @@
 define({
-  ports: {
-    gui: 3000,
-    receiver: 7777
+  gui: {
+    port: 3000
+  },
+
+  writer: {
+    port: 7777,
+    bucketName: "StatusUpdates"
   }
+
 });

@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "requirejs": "2.0.4",
+    "underscore": "latest",
     "express": "3.0.0beta7",
-    "jade": "*"
+    "jade": "*",
+    "riak-js": "latest",
+    "q": "latest"
   },
   "devDependencies": {
     "jasmine-node": "1.0.26"

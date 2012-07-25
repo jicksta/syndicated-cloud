@@ -6,5 +6,5 @@ requirejs.config({
 });
 
 requirejs(['system'], function(system) {
-    system.start();
+  system.start();
 });

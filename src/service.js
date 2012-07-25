@@ -1,9 +1,7 @@
-define(function() {
+define(["./util/object", "events"], function(object, events) {
 
-  function Service() {
-
-  }
-
-  return Service;
+  return function() {
+    return object(new events.EventEmitter);
+  };
 
 });

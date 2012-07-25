@@ -6,7 +6,7 @@ define(["express", "./routes", "http", "module", "path", "../config"], function(
   var app = express();
 
   app.configure(function() {
-    app.set('port', config.ports.gui);
+    app.set('port', config.gui.port);
     app.set('views', __dirname + '/views');
     app.set('view engine', 'jade');
     app.use(express.favicon());
@@ -25,8 +25,8 @@ define(["express", "./routes", "http", "module", "path", "../config"], function(
 
   return {
     listen: function() {
-      http.createServer(app).listen(config.ports.gui, function() {
-        console.log("Express server listening on port " + app.get('port'));
+      http.createServer(app).listen(config.gui.port, function() {
+        console.log("Express server listening on port " + config.gui.port);
       });
     }
   }
